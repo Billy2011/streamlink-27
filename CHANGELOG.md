@@ -1,5 +1,55 @@
 # Changelog
 
+## streamlink 1.27.1.0 (2020-11-05)
+
+Many good things:)
+
+```text
+Billy2011 <kschmidt2007@googlemail.com> (21):
+      cli.main: improvements
+      release-27 mods
+      release: 1.27.0.0
+      plugins.youtube: fix live playback
+      check for valid canonical URL
+      remove User-Agent
+      replace self.logger calls in plugins/updates
+      chore: remove deprecated CLI arguments
+      docs changes
+      update workflow
+      update github.io url's
+      Update deploy-docs.sh
+      update cli.main
+      plugins.skai: plugin removal
+      update import order
+      plugins.trt/trtspor: remove plugins
+      cli: optional player-args input variable
+      cli: add support for stream manifest URL output
+      plugin.api.useragents: update User-Agent and removed FIREFOX User-Agent imports
+      Create .travis.yml
+      Create deploy_key_doctr.enc
+
+Ian Cameron <1661072+mkbloke@users.noreply.github.com> (3):
+      plugins.kingkong: plugin removal
+      plugins.cnews: fix video ID search, add schema
+      plugins.ellobo: plugin removal
+
+Martin Buck <mb-tmp-tvguho.pbz@gromit.dyndns.org> (1):
+      plugins.zdf_mediathek: also support 3sat mediathek
+
+Sean Greenslade <sean@seangreenslade.com> (1):
+      plugins.picarto: explicitly detect and fail on private streams
+
+back-to <backto@protonmail.ch> (1):
+      plugin.api.useragents: update User-Agent
+
+bastimeyer <mail@bastimeyer.de> (4):
+      chore: remove old LIVESTREAMER_VERSION constant
+      ci.github: run lint step before test step
+      flake8: add import-order linting config
+      plugins.twitch: player_type access token parameter
+```
+
+
 ## streamlink 1.27.0.0 (2020-10-18)
 
 This is the first Python 2.7 compatibel release created from the streamlink/streamlink base version 1.7.0
