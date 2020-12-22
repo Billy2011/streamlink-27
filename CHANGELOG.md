@@ -42,6 +42,10 @@ Release highlights:
 - Changed: HTML documentation theme to [furo](https://github.com/pradyunsg/furo) ([#3335](https://github.com/streamlink/streamlink/pull/3335))
 - Removed: plugins for `skai`, `kingkong`, `ellobo`, `trt`/`trtspor`, `tamago`, `streamme`, `metube`, `cubetv`, `willax`
 
+```text
+
+```
+
 ## streamlink 1.27.0.0 (2020-10-18)
 
 This is the first Python 2.7 compatibel release created from the streamlink/streamlink base version 1.7.0
