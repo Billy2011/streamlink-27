@@ -1,5 +1,47 @@
 # Changelog
 
+## streamlink 1.27.1.0 (2020-12-22)
+
+Release highlights:
+
+- BREAKING: removed all deprecated CLI arguments ([#3277](https://github.com/streamlink/streamlink/pull/3277), [#3349](https://github.com/streamlink/streamlink/pull/3349))
+  - `--http-cookies`, `--http-headers`, `--http-query-params`
+  - `--no-version-check`
+  - `--rtmpdump-proxy`
+  - `--cmdline`, `-c`
+  - `--errorlog`, `-e`
+  - `--errorlog-path`
+  - `--btv-username`, `--btv-password`
+  - `--crunchyroll-locale`
+  - `--pixiv-username`, `--pixiv-password`
+  - `--twitch-oauth-authenticate`, `--twitch-oauth-token`, `--twitch-cookie`
+  - `--ustvnow-station-code`
+  - `--youtube-api-key`
+- BREAKING: replaced various subtitle muxing CLI arguments with `--mux-subtitles` ([#3324](https://github.com/streamlink/streamlink/pull/3324))
+  - `--funimationnow-mux-subtitles`
+  - `--pluzz-mux-subtitles`
+  - `--rtve-mux-subtitles`
+  - `--svtplay-mux-subtitles`
+  - `--vimeo-mux-subtitles`
+- BREAKING: sideloading faulty plugins will now raise an `Exception` ([#3366](https://github.com/streamlink/streamlink/pull/3366))
+- BREAKING/API: removed deprecated parameters from `HLSStream.parse_variant_playlist` ([#3347](https://github.com/streamlink/streamlink/pull/3347))
+- BREAKING/API: removed `plugin.api.support_plugin` ([#3398](https://github.com/streamlink/streamlink/pull/3398))
+- Added: new plugin for pluto.tv ([#3363](https://github.com/streamlink/streamlink/pull/3363))
+- Added: support for HLS master playlist URLs to `--stream-url` / `--json` ([#3300](https://github.com/streamlink/streamlink/pull/3300))
+- Added: `--ffmpeg-fout` for changing the output format of muxed streams ([#2892](https://github.com/streamlink/streamlink/pull/2892))
+- Added: `--ffmpeg-copyts` and `--ffmpeg-start-at-zero` ([#3404](https://github.com/streamlink/streamlink/pull/3404), [#3413](https://github.com/streamlink/streamlink/pull/3413))
+- Added: `--streann-url` for iframe referencing ([#3356](https://github.com/streamlink/streamlink/pull/3356))
+- Added: `--niconico-timeshift-offset` ([#3425](https://github.com/streamlink/streamlink/pull/3425))
+- Fixed: duplicate stream names in DASH inputs ([#3410](https://github.com/streamlink/streamlink/pull/3410))
+- Fixed: youtube live playback ([#3268](https://github.com/streamlink/streamlink/pull/3268), [#3372](https://github.com/streamlink/streamlink/pull/3372), [#3428](https://github.com/streamlink/streamlink/pull/3428))
+- Fixed: `--twitch-disable-reruns` ([#3375](https://github.com/streamlink/streamlink/pull/3375))
+- Fixed: various plugins issues (see detailed changelog down below)
+- Changed: `{filename}` variable in `--player-args` / `-a` to `{playerinput}` and made both optional ([#3313](https://github.com/streamlink/streamlink/pull/3313))
+- Changed: and fixed `streamlinkrc` config file in the Windows installer ([#3350](https://github.com/streamlink/streamlink/pull/3350))
+- Changed: MPV's automated `--title` argument to `--force-media-title` ([#3405](https://github.com/streamlink/streamlink/pull/3405))
+- Changed: HTML documentation theme to [furo](https://github.com/pradyunsg/furo) ([#3335](https://github.com/streamlink/streamlink/pull/3335))
+- Removed: plugins for `skai`, `kingkong`, `ellobo`, `trt`/`trtspor`, `tamago`, `streamme`, `metube`, `cubetv`, `willax`
+
 ## streamlink 1.27.0.0 (2020-10-18)
 
 This is the first Python 2.7 compatibel release created from the streamlink/streamlink base version 1.7.0
